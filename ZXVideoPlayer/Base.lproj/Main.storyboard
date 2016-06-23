@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7ie-bD-plt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWt-yH-3m6">
+                                <rect key="frame" x="236" y="427" width="129" height="30"/>
+                                <state key="normal" title="Play Remote Video"/>
+                                <connections>
+                                    <action selector="playRemoteVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIo-2X-h3s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh4-HQ-szk">
+                                <rect key="frame" x="244" y="369" width="113" height="30"/>
+                                <state key="normal" title="Play Local Video"/>
+                                <connections>
+                                    <action selector="playLocalVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Vh-CC-oip"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GWt-yH-3m6" secondAttribute="bottom" constant="94" id="0Hv-Da-YJs"/>
+                            <constraint firstItem="GWt-yH-3m6" firstAttribute="top" secondItem="yh4-HQ-szk" secondAttribute="bottom" constant="28" id="KDo-E7-ZOC"/>
+                            <constraint firstItem="GWt-yH-3m6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X79-1D-mbR"/>
+                            <constraint firstItem="yh4-HQ-szk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qIX-eu-luF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CRo-Sr-SZL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="429"/>
+        </scene>
+        <!--Base Tab Bar Controller-->
+        <scene sceneID="0d7-jk-0fA">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7ie-bD-plt" customClass="BaseTabBarController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ZG9-QJ-BYX">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AZh-OQ-Edg" kind="relationship" relationship="viewControllers" id="Gi6-iy-1En"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2q-gS-4cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="429"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="fKI-rg-BsE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AZh-OQ-Edg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="WPB-vn-jMh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GoH-QF-EYu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VsZ-Pq-PQf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5g9-q2-FZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168" y="429"/>
+        </scene>
+    </scenes>
+</document>

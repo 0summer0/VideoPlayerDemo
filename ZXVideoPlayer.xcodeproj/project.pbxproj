@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		296FA99F1CC7126C003FC0EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 296FA99E1CC7126C003FC0EA /* main.m */; };
+		296FA9A21CC7126C003FC0EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 296FA9A11CC7126C003FC0EA /* AppDelegate.m */; };
+		296FA9A51CC7126D003FC0EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296FA9A41CC7126D003FC0EA /* ViewController.m */; };
+		296FA9A81CC7126D003FC0EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296FA9A61CC7126D003FC0EA /* Main.storyboard */; };
+		296FA9AA1CC7126D003FC0EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296FA9A91CC7126D003FC0EA /* Assets.xcassets */; };
+		296FA9AD1CC7126D003FC0EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296FA9AB1CC7126D003FC0EA /* LaunchScreen.storyboard */; };
+		296FA9B81CC7126D003FC0EA /* ZXVideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 296FA9B71CC7126D003FC0EA /* ZXVideoPlayerTests.m */; };
+		296FA9C31CC7126D003FC0EA /* ZXVideoPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 296FA9C21CC7126D003FC0EA /* ZXVideoPlayerUITests.m */; };
+		296FAA841CC897BB003FC0EA /* 150511_JiveBike.mov in Resources */ = {isa = PBXBuildFile; fileRef = 296FAA831CC897BB003FC0EA /* 150511_JiveBike.mov */; };
+		29A523861CD35A440097198F /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A523851CD35A440097198F /* BaseTabBarController.m */; };
+		29A523891CD35DC30097198F /* VideoPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A523881CD35DC30097198F /* VideoPlayViewController.m */; };
+		29BA1FDD1D1AB7AC0053D2F9 /* kr-video-player-close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FB51D1AB7AC0053D2F9 /* kr-video-player-close@2x.png */; };
+		29BA1FDE1D1AB7AC0053D2F9 /* kr-video-player-close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FB61D1AB7AC0053D2F9 /* kr-video-player-close@3x.png */; };
+		29BA1FDF1D1AB7AC0053D2F9 /* kr-video-player-fullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FB71D1AB7AC0053D2F9 /* kr-video-player-fullscreen@2x.png */; };
+		29BA1FE01D1AB7AC0053D2F9 /* kr-video-player-fullscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FB81D1AB7AC0053D2F9 /* kr-video-player-fullscreen@3x.png */; };
+		29BA1FE11D1AB7AC0053D2F9 /* kr-video-player-pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FB91D1AB7AC0053D2F9 /* kr-video-player-pause@2x.png */; };
+		29BA1FE21D1AB7AC0053D2F9 /* kr-video-player-pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FBA1D1AB7AC0053D2F9 /* kr-video-player-pause@3x.png */; };
+		29BA1FE31D1AB7AC0053D2F9 /* kr-video-player-play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FBB1D1AB7AC0053D2F9 /* kr-video-player-play@2x.png */; };
+		29BA1FE41D1AB7AC0053D2F9 /* kr-video-player-play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FBC1D1AB7AC0053D2F9 /* kr-video-player-play@3x.png */; };
+		29BA1FE51D1AB7AC0053D2F9 /* kr-video-player-point@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FBD1D1AB7AC0053D2F9 /* kr-video-player-point@2x.png */; };
+		29BA1FE61D1AB7AC0053D2F9 /* kr-video-player-point@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FBE1D1AB7AC0053D2F9 /* kr-video-player-point@3x.png */; };
+		29BA1FE71D1AB7AC0053D2F9 /* kr-video-player-shrinkscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FBF1D1AB7AC0053D2F9 /* kr-video-player-shrinkscreen@2x.png */; };
+		29BA1FE81D1AB7AC0053D2F9 /* kr-video-player-shrinkscreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FC01D1AB7AC0053D2F9 /* kr-video-player-shrinkscreen@3x.png */; };
+		29BA1FE91D1AB7AC0053D2F9 /* zx-video-banner-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FC11D1AB7AC0053D2F9 /* zx-video-banner-back.png */; };
+		29BA1FEA1D1AB7AC0053D2F9 /* zx-video-banner-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FC21D1AB7AC0053D2F9 /* zx-video-banner-back@2x.png */; };
+		29BA1FEB1D1AB7AC0053D2F9 /* zx-video-player-brightness@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FC31D1AB7AC0053D2F9 /* zx-video-player-brightness@2x.png */; };
+		29BA1FEC1D1AB7AC0053D2F9 /* zx-video-player-brightness@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FC41D1AB7AC0053D2F9 /* zx-video-player-brightness@3x.png */; };
+		29BA1FED1D1AB7AC0053D2F9 /* zx-video-player-fastForward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FC51D1AB7AC0053D2F9 /* zx-video-player-fastForward@2x.png */; };
+		29BA1FEE1D1AB7AC0053D2F9 /* zx-video-player-fastForward@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FC61D1AB7AC0053D2F9 /* zx-video-player-fastForward@3x.png */; };
+		29BA1FEF1D1AB7AC0053D2F9 /* zx-video-player-lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FC71D1AB7AC0053D2F9 /* zx-video-player-lock@2x.png */; };
+		29BA1FF01D1AB7AC0053D2F9 /* zx-video-player-lock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FC81D1AB7AC0053D2F9 /* zx-video-player-lock@3x.png */; };
+		29BA1FF11D1AB7AC0053D2F9 /* zx-video-player-rewind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FC91D1AB7AC0053D2F9 /* zx-video-player-rewind@2x.png */; };
+		29BA1FF21D1AB7AC0053D2F9 /* zx-video-player-rewind@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FCA1D1AB7AC0053D2F9 /* zx-video-player-rewind@3x.png */; };
+		29BA1FF31D1AB7AC0053D2F9 /* zx-video-player-unlock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FCB1D1AB7AC0053D2F9 /* zx-video-player-unlock@2x.png */; };
+		29BA1FF41D1AB7AC0053D2F9 /* zx-video-player-unlock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FCC1D1AB7AC0053D2F9 /* zx-video-player-unlock@3x.png */; };
+		29BA1FF51D1AB7AC0053D2F9 /* zx-video-player-volume@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FCD1D1AB7AC0053D2F9 /* zx-video-player-volume@2x.png */; };
+		29BA1FF61D1AB7AC0053D2F9 /* zx-video-player-volume@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FCE1D1AB7AC0053D2F9 /* zx-video-player-volume@3x.png */; };
+		29BA1FF71D1AB7AC0053D2F9 /* zx-video-player-volumeMute@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FCF1D1AB7AC0053D2F9 /* zx-video-player-volumeMute@2x.png */; };
+		29BA1FF81D1AB7AC0053D2F9 /* zx-video-player-volumeMute@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29BA1FD01D1AB7AC0053D2F9 /* zx-video-player-volumeMute@3x.png */; };
+		29BA1FF91D1AB7AC0053D2F9 /* ZXVideoPlayerBatteryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BA1FD21D1AB7AC0053D2F9 /* ZXVideoPlayerBatteryView.m */; };
+		29BA1FFA1D1AB7AC0053D2F9 /* ZXVideoPlayerBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BA1FD41D1AB7AC0053D2F9 /* ZXVideoPlayerBrightnessView.m */; };
+		29BA1FFB1D1AB7AC0053D2F9 /* ZXVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BA1FD61D1AB7AC0053D2F9 /* ZXVideoPlayerController.m */; };
+		29BA1FFC1D1AB7AC0053D2F9 /* ZXVideoPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BA1FD81D1AB7AC0053D2F9 /* ZXVideoPlayerControlView.m */; };
+		29BA1FFD1D1AB7AC0053D2F9 /* ZXVideoPlayerTimeIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BA1FDA1D1AB7AC0053D2F9 /* ZXVideoPlayerTimeIndicatorView.m */; };
+		29BA1FFE1D1AB7AC0053D2F9 /* ZXVideoPlayerVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BA1FDC1D1AB7AC0053D2F9 /* ZXVideoPlayerVolumeView.m */; };
+		29BA20041D1AB9040053D2F9 /* ZXVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BA20031D1AB9040053D2F9 /* ZXVideo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		296FA9B41CC7126D003FC0EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 296FA9921CC7126C003FC0EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 296FA9991CC7126C003FC0EA;
+			remoteInfo = ZXVideoPlayer;
+		};
+		296FA9BF1CC7126D003FC0EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 296FA9921CC7126C003FC0EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 296FA9991CC7126C003FC0EA;
+			remoteInfo = ZXVideoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		296FA99A1CC7126C003FC0EA /* ZXVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		296FA99E1CC7126C003FC0EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		296FA9A01CC7126C003FC0EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		296FA9A11CC7126C003FC0EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		296FA9A31CC7126D003FC0EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		296FA9A41CC7126D003FC0EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		296FA9A71CC7126D003FC0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		296FA9A91CC7126D003FC0EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		296FA9AC1CC7126D003FC0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		296FA9AE1CC7126D003FC0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		296FA9B31CC7126D003FC0EA /* ZXVideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXVideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		296FA9B71CC7126D003FC0EA /* ZXVideoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerTests.m; sourceTree = "<group>"; };
+		296FA9B91CC7126D003FC0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		296FA9BE1CC7126D003FC0EA /* ZXVideoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXVideoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		296FA9C21CC7126D003FC0EA /* ZXVideoPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerUITests.m; sourceTree = "<group>"; };
+		296FA9C41CC7126D003FC0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		296FAA831CC897BB003FC0EA /* 150511_JiveBike.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 150511_JiveBike.mov; sourceTree = "<group>"; };
+		29A523841CD35A440097198F /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		29A523851CD35A440097198F /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		29A523871CD35DC30097198F /* VideoPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayViewController.h; sourceTree = "<group>"; };
+		29A523881CD35DC30097198F /* VideoPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayViewController.m; sourceTree = "<group>"; };
+		29BA1FB51D1AB7AC0053D2F9 /* kr-video-player-close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-close@2x.png"; sourceTree = "<group>"; };
+		29BA1FB61D1AB7AC0053D2F9 /* kr-video-player-close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-close@3x.png"; sourceTree = "<group>"; };
+		29BA1FB71D1AB7AC0053D2F9 /* kr-video-player-fullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-fullscreen@2x.png"; sourceTree = "<group>"; };
+		29BA1FB81D1AB7AC0053D2F9 /* kr-video-player-fullscreen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-fullscreen@3x.png"; sourceTree = "<group>"; };
+		29BA1FB91D1AB7AC0053D2F9 /* kr-video-player-pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-pause@2x.png"; sourceTree = "<group>"; };
+		29BA1FBA1D1AB7AC0053D2F9 /* kr-video-player-pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-pause@3x.png"; sourceTree = "<group>"; };
+		29BA1FBB1D1AB7AC0053D2F9 /* kr-video-player-play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-play@2x.png"; sourceTree = "<group>"; };
+		29BA1FBC1D1AB7AC0053D2F9 /* kr-video-player-play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-play@3x.png"; sourceTree = "<group>"; };
+		29BA1FBD1D1AB7AC0053D2F9 /* kr-video-player-point@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-point@2x.png"; sourceTree = "<group>"; };
+		29BA1FBE1D1AB7AC0053D2F9 /* kr-video-player-point@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-point@3x.png"; sourceTree = "<group>"; };
+		29BA1FBF1D1AB7AC0053D2F9 /* kr-video-player-shrinkscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-shrinkscreen@2x.png"; sourceTree = "<group>"; };
+		29BA1FC01D1AB7AC0053D2F9 /* kr-video-player-shrinkscreen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kr-video-player-shrinkscreen@3x.png"; sourceTree = "<group>"; };
+		29BA1FC11D1AB7AC0053D2F9 /* zx-video-banner-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-banner-back.png"; sourceTree = "<group>"; };
+		29BA1FC21D1AB7AC0053D2F9 /* zx-video-banner-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-banner-back@2x.png"; sourceTree = "<group>"; };
+		29BA1FC31D1AB7AC0053D2F9 /* zx-video-player-brightness@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-brightness@2x.png"; sourceTree = "<group>"; };
+		29BA1FC41D1AB7AC0053D2F9 /* zx-video-player-brightness@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-brightness@3x.png"; sourceTree = "<group>"; };
+		29BA1FC51D1AB7AC0053D2F9 /* zx-video-player-fastForward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-fastForward@2x.png"; sourceTree = "<group>"; };
+		29BA1FC61D1AB7AC0053D2F9 /* zx-video-player-fastForward@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-fastForward@3x.png"; sourceTree = "<group>"; };
+		29BA1FC71D1AB7AC0053D2F9 /* zx-video-player-lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-lock@2x.png"; sourceTree = "<group>"; };
+		29BA1FC81D1AB7AC0053D2F9 /* zx-video-player-lock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-lock@3x.png"; sourceTree = "<group>"; };
+		29BA1FC91D1AB7AC0053D2F9 /* zx-video-player-rewind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-rewind@2x.png"; sourceTree = "<group>"; };
+		29BA1FCA1D1AB7AC0053D2F9 /* zx-video-player-rewind@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-rewind@3x.png"; sourceTree = "<group>"; };
+		29BA1FCB1D1AB7AC0053D2F9 /* zx-video-player-unlock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-unlock@2x.png"; sourceTree = "<group>"; };
+		29BA1FCC1D1AB7AC0053D2F9 /* zx-video-player-unlock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-unlock@3x.png"; sourceTree = "<group>"; };
+		29BA1FCD1D1AB7AC0053D2F9 /* zx-video-player-volume@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-volume@2x.png"; sourceTree = "<group>"; };
+		29BA1FCE1D1AB7AC0053D2F9 /* zx-video-player-volume@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-volume@3x.png"; sourceTree = "<group>"; };
+		29BA1FCF1D1AB7AC0053D2F9 /* zx-video-player-volumeMute@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-volumeMute@2x.png"; sourceTree = "<group>"; };
+		29BA1FD01D1AB7AC0053D2F9 /* zx-video-player-volumeMute@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zx-video-player-volumeMute@3x.png"; sourceTree = "<group>"; };
+		29BA1FD11D1AB7AC0053D2F9 /* ZXVideoPlayerBatteryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerBatteryView.h; sourceTree = "<group>"; };
+		29BA1FD21D1AB7AC0053D2F9 /* ZXVideoPlayerBatteryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerBatteryView.m; sourceTree = "<group>"; };
+		29BA1FD31D1AB7AC0053D2F9 /* ZXVideoPlayerBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerBrightnessView.h; sourceTree = "<group>"; };
+		29BA1FD41D1AB7AC0053D2F9 /* ZXVideoPlayerBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerBrightnessView.m; sourceTree = "<group>"; };
+		29BA1FD51D1AB7AC0053D2F9 /* ZXVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerController.h; sourceTree = "<group>"; };
+		29BA1FD61D1AB7AC0053D2F9 /* ZXVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerController.m; sourceTree = "<group>"; };
+		29BA1FD71D1AB7AC0053D2F9 /* ZXVideoPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerControlView.h; sourceTree = "<group>"; };
+		29BA1FD81D1AB7AC0053D2F9 /* ZXVideoPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerControlView.m; sourceTree = "<group>"; };
+		29BA1FD91D1AB7AC0053D2F9 /* ZXVideoPlayerTimeIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerTimeIndicatorView.h; sourceTree = "<group>"; };
+		29BA1FDA1D1AB7AC0053D2F9 /* ZXVideoPlayerTimeIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerTimeIndicatorView.m; sourceTree = "<group>"; };
+		29BA1FDB1D1AB7AC0053D2F9 /* ZXVideoPlayerVolumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideoPlayerVolumeView.h; sourceTree = "<group>"; };
+		29BA1FDC1D1AB7AC0053D2F9 /* ZXVideoPlayerVolumeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideoPlayerVolumeView.m; sourceTree = "<group>"; };
+		29BA20021D1AB9040053D2F9 /* ZXVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXVideo.h; sourceTree = "<group>"; };
+		29BA20031D1AB9040053D2F9 /* ZXVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXVideo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		296FA9971CC7126C003FC0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296FA9B01CC7126D003FC0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296FA9BB1CC7126D003FC0EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		296FA9911CC7126C003FC0EA = {
+			isa = PBXGroup;
+			children = (
+				296FA99C1CC7126C003FC0EA /* ZXVideoPlayer */,
+				296FA9B61CC7126D003FC0EA /* ZXVideoPlayerTests */,
+				296FA9C11CC7126D003FC0EA /* ZXVideoPlayerUITests */,
+				296FA99B1CC7126C003FC0EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		296FA99B1CC7126C003FC0EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				296FA99A1CC7126C003FC0EA /* ZXVideoPlayer.app */,
+				296FA9B31CC7126D003FC0EA /* ZXVideoPlayerTests.xctest */,
+				296FA9BE1CC7126D003FC0EA /* ZXVideoPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		296FA99C1CC7126C003FC0EA /* ZXVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				29BA1FB31D1AB7AC0053D2F9 /* ZXVideoPlayer */,
+				296FA9A01CC7126C003FC0EA /* AppDelegate.h */,
+				296FA9A11CC7126C003FC0EA /* AppDelegate.m */,
+				29A523841CD35A440097198F /* BaseTabBarController.h */,
+				29A523851CD35A440097198F /* BaseTabBarController.m */,
+				296FA9A31CC7126D003FC0EA /* ViewController.h */,
+				296FA9A41CC7126D003FC0EA /* ViewController.m */,
+				29A523871CD35DC30097198F /* VideoPlayViewController.h */,
+				29A523881CD35DC30097198F /* VideoPlayViewController.m */,
+				296FA9A61CC7126D003FC0EA /* Main.storyboard */,
+				296FA9A91CC7126D003FC0EA /* Assets.xcassets */,
+				296FA9AB1CC7126D003FC0EA /* LaunchScreen.storyboard */,
+				296FA9AE1CC7126D003FC0EA /* Info.plist */,
+				296FA99D1CC7126C003FC0EA /* Supporting Files */,
+			);
+			path = ZXVideoPlayer;
+			sourceTree = "<group>";
+		};
+		296FA99D1CC7126C003FC0EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				296FAA831CC897BB003FC0EA /* 150511_JiveBike.mov */,
+				296FA99E1CC7126C003FC0EA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		296FA9B61CC7126D003FC0EA /* ZXVideoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				296FA9B71CC7126D003FC0EA /* ZXVideoPlayerTests.m */,
+				296FA9B91CC7126D003FC0EA /* Info.plist */,
+			);
+			path = ZXVideoPlayerTests;
+			sourceTree = "<group>";
+		};
+		296FA9C11CC7126D003FC0EA /* ZXVideoPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				296FA9C21CC7126D003FC0EA /* ZXVideoPlayerUITests.m */,
+				296FA9C41CC7126D003FC0EA /* Info.plist */,
+			);
+			path = ZXVideoPlayerUITests;
+			sourceTree = "<group>";
+		};
+		29BA1FB31D1AB7AC0053D2F9 /* ZXVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				29BA1FB41D1AB7AC0053D2F9 /* Assets */,
+				29BA1FD11D1AB7AC0053D2F9 /* ZXVideoPlayerBatteryView.h */,
+				29BA1FD21D1AB7AC0053D2F9 /* ZXVideoPlayerBatteryView.m */,
+				29BA1FD31D1AB7AC0053D2F9 /* ZXVideoPlayerBrightnessView.h */,
+				29BA1FD41D1AB7AC0053D2F9 /* ZXVideoPlayerBrightnessView.m */,
+				29BA1FD51D1AB7AC0053D2F9 /* ZXVideoPlayerController.h */,
+				29BA1FD61D1AB7AC0053D2F9 /* ZXVideoPlayerController.m */,
+				29BA1FD71D1AB7AC0053D2F9 /* ZXVideoPlayerControlView.h */,
+				29BA1FD81D1AB7AC0053D2F9 /* ZXVideoPlayerControlView.m */,
+				29BA1FD91D1AB7AC0053D2F9 /* ZXVideoPlayerTimeIndicatorView.h */,
+				29BA1FDA1D1AB7AC0053D2F9 /* ZXVideoPlayerTimeIndicatorView.m */,
+				29BA1FDB1D1AB7AC0053D2F9 /* ZXVideoPlayerVolumeView.h */,
+				29BA1FDC1D1AB7AC0053D2F9 /* ZXVideoPlayerVolumeView.m */,
+				29BA20021D1AB9040053D2F9 /* ZXVideo.h */,
+				29BA20031D1AB9040053D2F9 /* ZXVideo.m */,
+			);
+			path = ZXVideoPlayer;
+			sourceTree = "<group>";
+		};
+		29BA1FB41D1AB7AC0053D2F9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				29BA1FB51D1AB7AC0053D2F9 /* kr-video-player-close@2x.png */,
+				29BA1FB61D1AB7AC0053D2F9 /* kr-video-player-close@3x.png */,
+				29BA1FB71D1AB7AC0053D2F9 /* kr-video-player-fullscreen@2x.png */,
+				29BA1FB81D1AB7AC0053D2F9 /* kr-video-player-fullscreen@3x.png */,
+				29BA1FB91D1AB7AC0053D2F9 /* kr-video-player-pause@2x.png */,
+				29BA1FBA1D1AB7AC0053D2F9 /* kr-video-player-pause@3x.png */,
+				29BA1FBB1D1AB7AC0053D2F9 /* kr-video-player-play@2x.png */,
+				29BA1FBC1D1AB7AC0053D2F9 /* kr-video-player-play@3x.png */,
+				29BA1FBD1D1AB7AC0053D2F9 /* kr-video-player-point@2x.png */,
+				29BA1FBE1D1AB7AC0053D2F9 /* kr-video-player-point@3x.png */,
+				29BA1FBF1D1AB7AC0053D2F9 /* kr-video-player-shrinkscreen@2x.png */,
+				29BA1FC01D1AB7AC0053D2F9 /* kr-video-player-shrinkscreen@3x.png */,
+				29BA1FC11D1AB7AC0053D2F9 /* zx-video-banner-back.png */,
+				29BA1FC21D1AB7AC0053D2F9 /* zx-video-banner-back@2x.png */,
+				29BA1FC31D1AB7AC0053D2F9 /* zx-video-player-brightness@2x.png */,
+				29BA1FC41D1AB7AC0053D2F9 /* zx-video-player-brightness@3x.png */,
+				29BA1FC51D1AB7AC0053D2F9 /* zx-video-player-fastForward@2x.png */,
+				29BA1FC61D1AB7AC0053D2F9 /* zx-video-player-fastForward@3x.png */,
+				29BA1FC71D1AB7AC0053D2F9 /* zx-video-player-lock@2x.png */,
+				29BA1FC81D1AB7AC0053D2F9 /* zx-video-player-lock@3x.png */,
+				29BA1FC91D1AB7AC0053D2F9 /* zx-video-player-rewind@2x.png */,
+				29BA1FCA1D1AB7AC0053D2F9 /* zx-video-player-rewind@3x.png */,
+				29BA1FCB1D1AB7AC0053D2F9 /* zx-video-player-unlock@2x.png */,
+				29BA1FCC1D1AB7AC0053D2F9 /* zx-video-player-unlock@3x.png */,
+				29BA1FCD1D1AB7AC0053D2F9 /* zx-video-player-volume@2x.png */,
+				29BA1FCE1D1AB7AC0053D2F9 /* zx-video-player-volume@3x.png */,
+				29BA1FCF1D1AB7AC0053D2F9 /* zx-video-player-volumeMute@2x.png */,
+				29BA1FD01D1AB7AC0053D2F9 /* zx-video-player-volumeMute@3x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		296FA9991CC7126C003FC0EA /* ZXVideoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 296FA9C71CC7126D003FC0EA /* Build configuration list for PBXNativeTarget "ZXVideoPlayer" */;
+			buildPhases = (
+				296FA9961CC7126C003FC0EA /* Sources */,
+				296FA9971CC7126C003FC0EA /* Frameworks */,
+				296FA9981CC7126C003FC0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZXVideoPlayer;
+			productName = ZXVideoPlayer;
+			productReference = 296FA99A1CC7126C003FC0EA /* ZXVideoPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		296FA9B21CC7126D003FC0EA /* ZXVideoPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 296FA9CA1CC7126D003FC0EA /* Build configuration list for PBXNativeTarget "ZXVideoPlayerTests" */;
+			buildPhases = (
+				296FA9AF1CC7126D003FC0EA /* Sources */,
+				296FA9B01CC7126D003FC0EA /* Frameworks */,
+				296FA9B11CC7126D003FC0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				296FA9B51CC7126D003FC0EA /* PBXTargetDependency */,
+			);
+			name = ZXVideoPlayerTests;
+			productName = ZXVideoPlayerTests;
+			productReference = 296FA9B31CC7126D003FC0EA /* ZXVideoPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		296FA9BD1CC7126D003FC0EA /* ZXVideoPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 296FA9CD1CC7126D003FC0EA /* Build configuration list for PBXNativeTarget "ZXVideoPlayerUITests" */;
+			buildPhases = (
+				296FA9BA1CC7126D003FC0EA /* Sources */,
+				296FA9BB1CC7126D003FC0EA /* Frameworks */,
+				296FA9BC1CC7126D003FC0EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				296FA9C01CC7126D003FC0EA /* PBXTargetDependency */,
+			);
+			name = ZXVideoPlayerUITests;
+			productName = ZXVideoPlayerUITests;
+			productReference = 296FA9BE1CC7126D003FC0EA /* ZXVideoPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		296FA9921CC7126C003FC0EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Shawn;
+				TargetAttributes = {
+					296FA9991CC7126C003FC0EA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					296FA9B21CC7126D003FC0EA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 296FA9991CC7126C003FC0EA;
+					};
+					296FA9BD1CC7126D003FC0EA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 296FA9991CC7126C003FC0EA;
+					};
+				};
+			};
+			buildConfigurationList = 296FA9951CC7126C003FC0EA /* Build configuration list for PBXProject "ZXVideoPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 296FA9911CC7126C003FC0EA;
+			productRefGroup = 296FA99B1CC7126C003FC0EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				296FA9991CC7126C003FC0EA /* ZXVideoPlayer */,
+				296FA9B21CC7126D003FC0EA /* ZXVideoPlayerTests */,
+				296FA9BD1CC7126D003FC0EA /* ZXVideoPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		296FA9981CC7126C003FC0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29BA1FEF1D1AB7AC0053D2F9 /* zx-video-player-lock@2x.png in Resources */,
+				29BA1FDD1D1AB7AC0053D2F9 /* kr-video-player-close@2x.png in Resources */,
+				29BA1FF71D1AB7AC0053D2F9 /* zx-video-player-volumeMute@2x.png in Resources */,
+				29BA1FE31D1AB7AC0053D2F9 /* kr-video-player-play@2x.png in Resources */,
+				29BA1FE61D1AB7AC0053D2F9 /* kr-video-player-point@3x.png in Resources */,
+				29BA1FEA1D1AB7AC0053D2F9 /* zx-video-banner-back@2x.png in Resources */,
+				29BA1FEE1D1AB7AC0053D2F9 /* zx-video-player-fastForward@3x.png in Resources */,
+				296FA9AD1CC7126D003FC0EA /* LaunchScreen.storyboard in Resources */,
+				29BA1FE41D1AB7AC0053D2F9 /* kr-video-player-play@3x.png in Resources */,
+				296FA9AA1CC7126D003FC0EA /* Assets.xcassets in Resources */,
+				29BA1FF21D1AB7AC0053D2F9 /* zx-video-player-rewind@3x.png in Resources */,
+				29BA1FEC1D1AB7AC0053D2F9 /* zx-video-player-brightness@3x.png in Resources */,
+				29BA1FDF1D1AB7AC0053D2F9 /* kr-video-player-fullscreen@2x.png in Resources */,
+				29BA1FF81D1AB7AC0053D2F9 /* zx-video-player-volumeMute@3x.png in Resources */,
+				29BA1FEB1D1AB7AC0053D2F9 /* zx-video-player-brightness@2x.png in Resources */,
+				29BA1FE21D1AB7AC0053D2F9 /* kr-video-player-pause@3x.png in Resources */,
+				29BA1FE81D1AB7AC0053D2F9 /* kr-video-player-shrinkscreen@3x.png in Resources */,
+				29BA1FF51D1AB7AC0053D2F9 /* zx-video-player-volume@2x.png in Resources */,
+				29BA1FE91D1AB7AC0053D2F9 /* zx-video-banner-back.png in Resources */,
+				29BA1FE71D1AB7AC0053D2F9 /* kr-video-player-shrinkscreen@2x.png in Resources */,
+				296FAA841CC897BB003FC0EA /* 150511_JiveBike.mov in Resources */,
+				29BA1FDE1D1AB7AC0053D2F9 /* kr-video-player-close@3x.png in Resources */,
+				29BA1FED1D1AB7AC0053D2F9 /* zx-video-player-fastForward@2x.png in Resources */,
+				29BA1FE11D1AB7AC0053D2F9 /* kr-video-player-pause@2x.png in Resources */,
+				29BA1FF11D1AB7AC0053D2F9 /* zx-video-player-rewind@2x.png in Resources */,
+				29BA1FE51D1AB7AC0053D2F9 /* kr-video-player-point@2x.png in Resources */,
+				29BA1FF61D1AB7AC0053D2F9 /* zx-video-player-volume@3x.png in Resources */,
+				29BA1FF31D1AB7AC0053D2F9 /* zx-video-player-unlock@2x.png in Resources */,
+				29BA1FF41D1AB7AC0053D2F9 /* zx-video-player-unlock@3x.png in Resources */,
+				29BA1FE01D1AB7AC0053D2F9 /* kr-video-player-fullscreen@3x.png in Resources */,
+				296FA9A81CC7126D003FC0EA /* Main.storyboard in Resources */,
+				29BA1FF01D1AB7AC0053D2F9 /* zx-video-player-lock@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296FA9B11CC7126D003FC0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296FA9BC1CC7126D003FC0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		296FA9961CC7126C003FC0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A523891CD35DC30097198F /* VideoPlayViewController.m in Sources */,
+				29A523861CD35A440097198F /* BaseTabBarController.m in Sources */,
+				29BA1FFE1D1AB7AC0053D2F9 /* ZXVideoPlayerVolumeView.m in Sources */,
+				29BA1FFD1D1AB7AC0053D2F9 /* ZXVideoPlayerTimeIndicatorView.m in Sources */,
+				29BA1FFA1D1AB7AC0053D2F9 /* ZXVideoPlayerBrightnessView.m in Sources */,
+				296FA9A51CC7126D003FC0EA /* ViewController.m in Sources */,
+				29BA1FF91D1AB7AC0053D2F9 /* ZXVideoPlayerBatteryView.m in Sources */,
+				29BA1FFC1D1AB7AC0053D2F9 /* ZXVideoPlayerControlView.m in Sources */,
+				296FA9A21CC7126C003FC0EA /* AppDelegate.m in Sources */,
+				29BA20041D1AB9040053D2F9 /* ZXVideo.m in Sources */,
+				29BA1FFB1D1AB7AC0053D2F9 /* ZXVideoPlayerController.m in Sources */,
+				296FA99F1CC7126C003FC0EA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296FA9AF1CC7126D003FC0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296FA9B81CC7126D003FC0EA /* ZXVideoPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		296FA9BA1CC7126D003FC0EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296FA9C31CC7126D003FC0EA /* ZXVideoPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		296FA9B51CC7126D003FC0EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 296FA9991CC7126C003FC0EA /* ZXVideoPlayer */;
+			targetProxy = 296FA9B41CC7126D003FC0EA /* PBXContainerItemProxy */;
+		};
+		296FA9C01CC7126D003FC0EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 296FA9991CC7126C003FC0EA /* ZXVideoPlayer */;
+			targetProxy = 296FA9BF1CC7126D003FC0EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		296FA9A61CC7126D003FC0EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				296FA9A71CC7126D003FC0EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		296FA9AB1CC7126D003FC0EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				296FA9AC1CC7126D003FC0EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		296FA9C51CC7126D003FC0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		296FA9C61CC7126D003FC0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		296FA9C81CC7126D003FC0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZXVideoPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		296FA9C91CC7126D003FC0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZXVideoPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		296FA9CB1CC7126D003FC0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZXVideoPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZXVideoPlayer.app/ZXVideoPlayer";
+			};
+			name = Debug;
+		};
+		296FA9CC1CC7126D003FC0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZXVideoPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZXVideoPlayer.app/ZXVideoPlayer";
+			};
+			name = Release;
+		};
+		296FA9CE1CC7126D003FC0EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZXVideoPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZXVideoPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		296FA9CF1CC7126D003FC0EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZXVideoPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shawn.ZXVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZXVideoPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		296FA9951CC7126C003FC0EA /* Build configuration list for PBXProject "ZXVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296FA9C51CC7126D003FC0EA /* Debug */,
+				296FA9C61CC7126D003FC0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		296FA9C71CC7126D003FC0EA /* Build configuration list for PBXNativeTarget "ZXVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296FA9C81CC7126D003FC0EA /* Debug */,
+				296FA9C91CC7126D003FC0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		296FA9CA1CC7126D003FC0EA /* Build configuration list for PBXNativeTarget "ZXVideoPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296FA9CB1CC7126D003FC0EA /* Debug */,
+				296FA9CC1CC7126D003FC0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		296FA9CD1CC7126D003FC0EA /* Build configuration list for PBXNativeTarget "ZXVideoPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				296FA9CE1CC7126D003FC0EA /* Debug */,
+				296FA9CF1CC7126D003FC0EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 296FA9921CC7126C003FC0EA /* Project object */;
+}
