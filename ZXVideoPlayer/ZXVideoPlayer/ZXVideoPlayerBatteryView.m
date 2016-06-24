@@ -12,7 +12,7 @@
 
 - (void)dealloc
 {
-    [[UIDevice currentDevice] removeObserver:self forKeyPath:@"batteryLevel"];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -58,14 +58,14 @@
 
 - (void)addBatteryObserver
 {
-    UIDevice *device = [UIDevice currentDevice];
-    // or use UIDeviceBatteryLevelDidChangeNotification
-    [device addObserver:self forKeyPath:@"batteryLevel" options:NSKeyValueObservingOptionNew context:NULL];
+    // or use [[UIDevice currentDevice] addObserver:self forKeyPath:@"batteryLevel" options:NSKeyValueObservingOptionNew context:NULL];
+    //  以上方法调用次数相对较多，所以修改为仅当值改变时重绘
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onBatteryLevelChanged:) name:UIDeviceBatteryLevelDidChangeNotification object:nil];
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
+- (void)onBatteryLevelChanged:(NSNotification *)noti
 {
-    self.batteryLevel = [change[@"new"] floatValue];
+    self.batteryLevel = ((UIDevice *)noti.object).batteryLevel;
     [self setNeedsDisplay]; // redrawn battery view
 }
 

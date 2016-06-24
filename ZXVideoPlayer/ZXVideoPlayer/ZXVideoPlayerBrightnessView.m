@@ -42,7 +42,6 @@ static const CGFloat kBrightnessIndicatorAutoFadeOutTimeInterval = 1.0;
 
 - (void)configScreenBrightnessObserver
 {
-    // or use UIScreenBrightnessDidChangeNotification
     [[UIScreen mainScreen] addObserver:self
                             forKeyPath:@"brightness"
                                options:NSKeyValueObservingOptionNew
