@@ -104,7 +104,7 @@ static const CGFloat kVolumeIndicatorAutoFadeOutTimeInterval = 1.0;
     for (NSInteger i=0; i<self.blocksArray.count; i++) {
         UIImageView *img = self.blocksArray[i];
         
-        if (i <= level) {
+        if (i < level) {
             img.hidden = NO;
         } else {
             img.hidden = YES;
@@ -112,7 +112,6 @@ static const CGFloat kVolumeIndicatorAutoFadeOutTimeInterval = 1.0;
     }
     
     if (value == 0.0) {
-        [self.blocksArray[0] setHidden:YES];
         if (!self.volumeImageView.accessibilityIdentifier) {
             self.volumeImageView.accessibilityIdentifier = @"";
             self.volumeImageView.image = [UIImage imageNamed:@"zx-video-player-volumeMute"];
