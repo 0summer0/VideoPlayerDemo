@@ -232,8 +232,6 @@ static const CGFloat kVideoPlayerControllerAnimationTimeInterval = 0.3f;
             [self.videoControl animateShow];
         }
     }
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(quality) name:@"" object:nil];
 }
 
 /// 媒体网络加载状态改变
